@@ -17,7 +17,15 @@
 
 
     </div>
+    <div ng-controller="ChartCtrl as vm">
+        <div google-chart chart="vm.chartObject" style="height:400px;width:100%;"></div>
+    </div>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script>
+    <script src="bower_components/angular-google-chart/ng-google-chart.js"></script>
+    <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/directives.js"></script>
