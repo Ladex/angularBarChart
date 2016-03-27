@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Bar Chart: Pure CSS</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller = "BarChartCtrl as vm">
+        <div class="container" ng-style="vm.setContainer()" >
+            <div class="bar" ng-repeat="bar in vm.bars" ng-style="vm.setDetails(bar,$index)">{{bar.color}}-{{bar.percentage}}%</div>
+        </div>
+
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
